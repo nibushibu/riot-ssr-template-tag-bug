@@ -7,7 +7,6 @@ const register = require('@riotjs/ssr/register')
 const srcDirFromRoot = './src/html/pages'
 const outputDir = 'dist/'
 
-// Riot コンポーネントを require できるように
 register()
 
 glob(`${srcDirFromRoot}/**/*.riot`, (err, files) => {
