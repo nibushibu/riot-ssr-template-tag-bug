@@ -1,0 +1,31 @@
+<html-base>
+
+  <head>
+    <meta charset="utf-8">
+    <template>
+      <title>{ state.title }</title>
+      <meta if="{ props.meta }" each="{ meta in props.meta }" {...meta}>
+      <meta if="{ !props.meta }" each="{ meta in state.meta }" {...meta}>
+    </template>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+    <slot name="default"></slot>
+  </body>
+
+  <script>
+    export default {
+      state: {
+        title: 'Title',
+        meta: [
+          {
+            name: 'description',
+            content: 'description',
+          },
+        ],
+      },
+    }
+  </script>
+
+</html-base>

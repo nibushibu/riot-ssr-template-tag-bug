@@ -1,0 +1,17 @@
+<html lang="ja">
+<template is="html-base" title="{ state.title }" meta="{ state.meta }">
+  <h1>Riot SSR</h1>
+</template>
+<script>
+  import HtmlBase from '../components/html-base.riot'
+  export default {
+    components: {
+      HtmlBase,
+    },
+    state: {
+      title: 'Page Title',
+    }
+  }
+</script>
+
+</html>

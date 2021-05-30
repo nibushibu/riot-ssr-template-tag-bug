@@ -1,0 +1,17 @@
+{
+  "name": "riot-ssr-template-tag-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node src/riot2html.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@riotjs/ssr": "^6.0.0",
+    "glob": "^7.1.7",
+    "mkdirp": "^1.0.4",
+    "riot": "^5.4.3"
+  }
+}
